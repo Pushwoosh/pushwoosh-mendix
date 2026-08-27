@@ -1,0 +1,39 @@
+{
+  "name": "pushwoosh-native",
+  "moduleName": "Pushwoosh",
+  "version": "1.0.0",
+  "license": "MIT",
+  "copyright": "© Pushwoosh 2026",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pushwoosh/pushwoosh-mendix.git"
+  },
+  "marketplace": {
+    "name": "Pushwoosh",
+    "description": "Push notifications, in-app messages and customer engagement for Mendix native mobile apps, powered by Pushwoosh.",
+    "minimumMXVersion": "11.11.0"
+  },
+  "testProject": {
+    "path": "../../../demo"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup --config ../../../configs/jsactions/rollup.config.mjs --configProject pushwoosh",
+    "start": "rollup --config ../../../configs/jsactions/rollup.config.mjs --configProject pushwoosh --watch",
+    "lint": "eslint --ext .ts src/",
+    "release": "npm run build"
+  },
+  "dependencies": {
+    "pushwoosh-react-native-plugin": "6.1.59"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "*",
+    "@types/big.js": "^6.2.2",
+    "big.js": "^6.2.2",
+    "mendix": "11.8.0",
+    "react": "19.2.3",
+    "react-native": "0.84.1",
+    "rimraf": "^6.1.2"
+  }
+}

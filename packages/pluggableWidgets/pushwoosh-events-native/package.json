@@ -1,0 +1,28 @@
+{
+  "name": "pushwoosh-events-native",
+  "widgetName": "PushwooshEvents",
+  "version": "1.0.0",
+  "license": "MIT",
+  "copyright": "© Pushwoosh 2026",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pushwoosh/pushwoosh-mendix.git"
+  },
+  "config": {},
+  "packagePath": "com.pushwoosh.widget.native",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "format": "pluggable-widgets-tools format",
+    "release": "pluggable-widgets-tools release:native",
+    "lint": "eslint --ext .ts,.tsx src/",
+    "test": "pluggable-widgets-tools test:unit:native"
+  },
+  "dependencies": {
+    "pushwoosh-react-native-plugin": "6.1.59"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "*",
+    "mendix": "11.8.0"
+  }
+}

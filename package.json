@@ -1,0 +1,31 @@
+{
+  "name": "pushwoosh-mendix",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/jsActions/*",
+    "packages/pluggableWidgets/*"
+  ],
+  "license": "MIT",
+  "description": "Pushwoosh module for Mendix — JavaScript actions and a native widget for Mendix Native Mobile apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pushwoosh/pushwoosh-mendix.git"
+  },
+  "scripts": {
+    "build": "npm run build -w pushwoosh-native && npm run build -w pushwoosh-events-native",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "*",
+    "@types/node": "^20.19.37",
+    "@types/react": "~19.2.14",
+    "colors": "^1.4.0",
+    "mendix-client": "^7.15.8",
+    "recursive-copy": "^2.0.14",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.11.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "extends": "@mendix/pluggable-widgets-tools/configs/tsconfig.base",
+    "baseUrl": "./",
+    "include": ["./src", "./typings"],
+    "compilerOptions": {
+        // React Native 0.84 ships its types under types_generated and exposes them through
+        // package.json "exports". The classic "node" resolution the Mendix base config uses
+        // cannot see them.
+        "moduleResolution": "bundler",
+        "typeRoots": ["node_modules/@types", "../../../node_modules/@types"]
+    }
+}

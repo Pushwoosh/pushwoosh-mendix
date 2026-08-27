@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.pushwoosh.widget.native.pushwooshevents.PushwooshEvents" supportedPlatform="Native" needsEntityContext="false" offlineCapable="true" pluginWidget="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../../../../node_modules/mendix/custom_widget.xsd">
+    <name>Pushwoosh events</name>
+    <description>Initializes Pushwoosh and triggers nanoflows when a push notification arrives or is opened. Place it once, on the home page.</description>
+    <studioProCategory>Pushwoosh</studioProCategory>
+    <studioCategory>Pushwoosh</studioCategory>
+    <properties>
+        <propertyGroup caption="Setup">
+            <property key="applicationCode" type="string" required="true">
+                <caption>Application Code</caption>
+                <description>The Pushwoosh Application Code, for example XXXXX-XXXXX. Found in the Pushwoosh Control Panel.</description>
+            </property>
+            <property key="registerOnLoad" type="boolean" defaultValue="true">
+                <caption>Register on load</caption>
+                <description>Register the device for push notifications as soon as this widget loads. On iOS this shows the system permission prompt, so turn it off if you would rather ask later with the Register action.</description>
+            </property>
+            <property key="onInitializedAction" type="action" required="false">
+                <caption>On initialized</caption>
+                <description>Triggered once the Pushwoosh SDK has started.</description>
+            </property>
+            <property key="onRegisteredAction" type="action" required="false">
+                <caption>On registered</caption>
+                <description>Triggered when the device has a push token. The token is written to the Push token attribute first.</description>
+            </property>
+            <property key="pushTokenAttribute" type="attribute" required="false">
+                <caption>Push token</caption>
+                <description>The attribute the push token is written to before On registered runs.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Push events">
+            <property key="payloadAttribute" type="attribute" required="false">
+                <caption>Payload</caption>
+                <description>The attribute the full push payload is written to, as JSON, before the event action runs.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="messageAttribute" type="attribute" required="false">
+                <caption>Message</caption>
+                <description>The attribute the notification text is written to before the event action runs.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="onPushReceivedAction" type="action" required="false">
+                <caption>On push received</caption>
+                <description>Triggered when a push notification arrives while the app is in the foreground.</description>
+            </property>
+            <property key="onPushOpenedAction" type="action" required="false">
+                <caption>On push opened</caption>
+                <description>Triggered when the user taps a push notification.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Deep links">
+            <property key="deepLinkAttribute" type="attribute" required="false">
+                <caption>Deep link</caption>
+                <description>The attribute the deep link URL from the push is written to before On deep link runs.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="onDeepLinkAction" type="action" required="false">
+                <caption>On deep link</caption>
+                <description>Triggered when an opened push carries a deep link. Runs in addition to On push opened.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

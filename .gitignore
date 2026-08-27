@@ -1,0 +1,24 @@
+node_modules/
+dist/
+tmp/
+out/
+output/
+*.log
+
+# Mendix build artefacts
+*.mpk
+# ...except widgets installed into the demo app: without them the project does not open.
+!demo/widgets/*.mpk
+deployment/
+javasource/*/proxies/
+modeler-merge-marker
+*.mpr.bak
+*.launch
+.mendix-cache/
+
+# macOS
+.DS_Store
+
+# loop state (working files, not deliverables)
+.loop/
+.node/
