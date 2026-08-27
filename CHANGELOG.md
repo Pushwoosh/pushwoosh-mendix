@@ -1,10 +1,20 @@
 # Changelog
 
+## 1.0.1
+
+Documentation only — the module itself is unchanged from 1.0.0.
+
+- A README written for the person installing the module, rather than for the people
+  building it: what the widget does, what each of the 23 actions returns, how to
+  configure the native build, and what to check when nothing happens.
+- Corrected the minimum Studio Pro version. 1.0.0 said 11.13; the real floor is **11.11**,
+  because native-template 19.1 already carries the React Native version this module needs.
+
 ## 1.0.0
 
 First release of the Pushwoosh module for Mendix.
 
-**Requires Studio Pro 11.13 or newer** (native-template 20, React Native 0.84).
+**Requires Studio Pro 11.11 or newer** (native-template 19.1 or 20, React Native 0.84).
 
 ### Getting started
 
