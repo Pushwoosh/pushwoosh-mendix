@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.1.0
+
+### Demo app
+
+The repository now ships the Mendix app the module is developed against. It is a working
+example, not a screenshot: open it in Studio Pro, put in your own Application Code, build
+it for iOS or Android, and every action below is a button you can press on a device.
+
+Screens cover registration and the push token, tags with the key and value typed in on the
+device, events with the event name typed in, and unregistering.
+
+The Application Code in the published copy is a placeholder — replace `XXXXX-XXXXX` with
+yours from the Pushwoosh Control Panel before building.
+
+### Notes
+
+- The demo is not part of the Marketplace package. The `.mpk` contains the `Pushwoosh`
+  module only; the demo lives here, in the repository.
+- Building it needs Studio Pro 11.11+ and, for the native app, Xcode or Android Studio.
+  The Mac build of Studio Pro has no Native Mobile Builder, so on macOS the native project
+  is configured through Mendix's `native-mobile-toolkit` CLI instead.
+
 ## 1.0.1
 
 Documentation only — the module itself is unchanged from 1.0.0.

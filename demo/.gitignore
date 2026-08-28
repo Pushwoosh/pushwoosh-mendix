@@ -1,0 +1,27 @@
+# Mendix working files. Based on the .gitignore Mendix ships with their own
+# native-mobile-resources app, adjusted for this project's name.
+/.idea/
+/.DS_Store
+/*.launch
+/deployment/
+/packages/
+/releases/
+/.mendix-cache/
+/.classpath
+/.project
+/PushwooshDemo.mpr.bak
+/PushwooshDemo.mpr.lock
+/modeler-merge-marker
+/project-settings.user.json
+/javasource/*/proxies/
+/javasource/system/
+/**/node_modules/
+# Mendix's own template un-ignores this, because their modules ship JS dependencies in
+# the repo. Ours come from npm via `make sync-demo`, so keeping 600 copied files under
+# version control buys nothing and drags machine-local paths along.
+/nativemobile/builds/
+/vendorlib/temp/
+/theme-cache/
+.DS_Store
+/.svn/
+/mprcontents/mprjournal*
