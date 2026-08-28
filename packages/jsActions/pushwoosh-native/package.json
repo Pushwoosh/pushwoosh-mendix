@@ -1,7 +1,7 @@
 {
   "name": "pushwoosh-native",
   "moduleName": "Pushwoosh",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "copyright": "© Pushwoosh 2026",
   "private": true,
@@ -12,7 +12,7 @@
   "marketplace": {
     "name": "Pushwoosh",
     "description": "Push notifications, in-app messages and customer engagement for Mendix native mobile apps, powered by Pushwoosh.",
-    "minimumMXVersion": "11.11.0"
+    "minimumMXVersion": "11.12.3"
   },
   "testProject": {
     "path": "../../../demo"

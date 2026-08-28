@@ -36,7 +36,7 @@
 
 | | |
 | --- | --- |
-| Studio Pro | 11.11.0 or newer |
+| Studio Pro | 11.12.3 or newer |
 | Platforms | iOS and Android, native mobile profile |
 | Pushwoosh account | free tier is enough to start — [sign up](https://app.pushwoosh.com/signup) |
 

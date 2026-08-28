@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+Minor corrections. The module's behaviour is unchanged from 1.1.0.
+
 ## 1.1.0
 
 ### Demo app
