@@ -1,8 +1,16 @@
 # Changelog
 
+## 1.1.2
+
+Minor changes.
+
+The module's behaviour is unchanged from 1.1.1.
+
 ## 1.1.1
 
-Minor corrections. The module's behaviour is unchanged from 1.1.0.
+Minor corrections.
+
+The module's behaviour is unchanged from 1.1.0.
 
 ## 1.1.0
 

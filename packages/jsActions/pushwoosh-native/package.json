@@ -1,7 +1,7 @@
 {
   "name": "pushwoosh-native",
   "moduleName": "Pushwoosh",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "copyright": "© Pushwoosh 2026",
   "private": true,
